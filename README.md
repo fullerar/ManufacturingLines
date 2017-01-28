@@ -21,3 +21,16 @@ This is a four phase project defined as follows:
     
 - Phase4:
   - uses the same finite state machine but this time the model is implemented with multi-processes but this time, distributed over different machines, with no shared memory.
+
+
+
+Usage notes:
+- In Terminal, cd into the correct directory and run:
+  - To compile all files:
+    - make
+  - To start the program: 
+    - ./driver
+- NOTE that the default starting state is ACCEPTING
+- 'X' => exits the driver
+- 'O' => tells the machine that an order has been recieved. State switches to PROCESSING.
+- 'V' => tells 
