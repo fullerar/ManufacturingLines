@@ -1,6 +1,6 @@
 # ManufacturingLines
 
-- Some things to note: 
+Some things to note: 
   - These programs were made on/for a Linux based machine. Some functions used are deprecated on Mac OS and will cause warnings/errors if you try to compile them.
   - Each Phase contains a makefile for the corresponding phase.
   - Each Phase is intended to be used through the command line.
