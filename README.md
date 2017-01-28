@@ -25,12 +25,24 @@ This is a four phase project defined as follows:
 
 
 Usage notes:
-- In Terminal, cd into the correct directory and run:
+- In Terminal, cd into the correct directory and perform the following in order:
   - To compile all files:
     - make
   - To start the program: 
     - ./driver
-- NOTE that the default starting state is ACCEPTING
+- NOTE:
+  - The default starting state is ACCEPTING
+  - Certain states will only respond to certain keys. The machine will not change state if a key is entered out of order. The possible keys to be entered for each state are as follows:
+    - ACCEPTING => O
+    - PROCESSING => V,I
+    - MANUFACTURING => C,F
+    - SHIPPING => R,L
+    - You may enter X at any time
 - 'X' => exits the driver
-- 'O' => tells the machine that an order has been recieved. State switches to PROCESSING.
-- 'V' => tells 
+- 'O' => tells the machine that an order has been recieved. State switches to PROCESSING and now waits for either a valid or invalid payment.
+- 'I' => tells the machine that an invalid payment has been recieved. The state remains in PROCESSING until either a valid payment is given or 3 invalid attempts are given. Upon the latter, the state is returned to ACCEPTING and you must start over.
+- 'V' => tells the machine that a valid payment has been recieved. State switches to MANUFACTURING and now waits for confirmation that the manufacturing was either completed or failed.
+- 'F' => tells the machine that the manufacturing lines failed to produce the product. State returns to ACCEPTING and you must start over.
+- 'C' => tells the machine that the manufacturing lines completed the product. State switches to SHIPPING and waits for either confirmation that the customer received the product, or that it was lost in transit.
+- 'L' => tells the machine that the product was lost in transit. State returns to ACCEPTING and you must start over.
+- 'R' => tells the machine that the product was delivered to the customer. State returns to ACCEPTING and waits for a new order.
