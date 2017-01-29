@@ -15,9 +15,11 @@ This is a four phase project defined as follows:
 
 - Phase2:
   - uses the same finite state machine but this time the model is implemented with mutli-threads. This version will work under the assumption that there are five "manufacturing lines" in the factory, each represented by an individual thread.
+  - NOTE that these threads and what they represent, manufacturing lines, have a duration element. Meaning the when the user goes from the PROCESSING state into the MANUFACTURING state, each line will have a randomized duration to wait, symbolizing the lines actually working to produce some product. If you do not see immediate response in the termnial, just wait. It should take no longer than ~30 seconds to finish correctly and print out to the terminal.
  
 - Phase3: 
-  - uses the same finite state machine but this time the model is implemented with multi-processes. This version will work under the assumption that there are five "manufacturing lines" in the factory, each represented by an individual process, a process that represents the current state, and a process that supervises the shared memory in order to achieve concurrency.
+  - uses the same finite state machine but this time the model is implemented with multi-processes. This version will work under the assumption that there are five "manufacturing lines" in the factory, each represented as a child proccess of the MANUFACTURING state(parent process). There is also now a Supervisor class, which acts as another process, that monitors the progress of the factory line processes, keeps stats, and alerts the parent process when all factory lines/processes are finished.
+  - NOTE that there is known bug here, in the form of an implicit declaration of function warning. This should not cause any problems.
     
 - Phase4:
   - uses the same finite state machine but this time the model is implemented with multi-processes but this time, distributed over different machines, with no shared memory.
