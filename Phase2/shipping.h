@@ -1,8 +1,9 @@
 /*
-Names: Laura VanDyke and Andrew Fuller
+Authors: Laura VanDyke and Andrew Fuller
 TermProject-Phase2
 Date: Octorber 27, 2015
 */
+
 #ifndef shipping_h
 #define shipping_h
 
