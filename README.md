@@ -1,9 +1,12 @@
 # ManufacturingLines
+# JMU Fall '15
+# Laura VanDyke, Andrew Fuller
 
 Some things to note: 
   - These programs were made on/for a Linux based machine. Some functions used are deprecated on Mac OS and will cause warnings/errors if you try to compile them.
   - Each Phase contains a makefile for the corresponding phase.
   - Each Phase is intended to be used through the command line.
+  - While each Phase generally uses the same .c/.h files, the implementation will vary between each (other than what is described below in the Phase definitions. For example the driver class in Phase1/2 uses nested if statements, while the driver class in Phase3 uses a switch statement. I am leaving as is to show the transistion of coding style as the semester went on. (Note that this was the first time I ever used C and was not as aware of good coding practices)
   
 
 
@@ -22,7 +25,8 @@ This is a four phase project defined as follows:
   - NOTE that there is known bug here, in the form of an implicit declaration of function warning. This should not cause any problems.
     
 - Phase4:
-  - uses the same finite state machine but this time the model is implemented with multi-processes but this time, distributed over different machines, with no shared memory.
+  - uses the same finite state machine but this time the model is implemented with multi-processes but this time, distributed over different machines (sever/client architecture), with no shared memory.
+  - NOTE that this phase has not been added yet. There is a bug that I am working to fix. Will upload in the near future.
 
 
 
