@@ -1,8 +1,9 @@
 /*
-Names: Laura VanDyke and Andrew Fuller
+Authors: Laura VanDyke and Andrew Fuller
 TermProject-Phase2
 Date: Octorber 27, 2015
 */
+
 #ifndef hardware_h
 #define hardware_h
 
