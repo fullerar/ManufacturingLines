@@ -1,8 +1,9 @@
 /*
-Names: Laura VanDyke and Andrew Fuller
+Authors: Laura VanDyke and Andrew Fuller
 TermProject-Phase1
 Date: Octorber 11, 2015
 */
+
 #ifndef accepting_h
 #define accepting_h
 
