@@ -1,6 +1,7 @@
 # ManufacturingLines
 JMU Fall '15
 Laura VanDyke, Andrew Fuller
+
 Special help/supervision from Dr. Mohamed Aboutabl of James Madison University
 https://users.cs.jmu.edu/aboutams/Web/?_ga=1.53341537.872193050.1443477993
 
