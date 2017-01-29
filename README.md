@@ -32,6 +32,7 @@ Usage notes:
     - ./driver
 - NOTE:
   - The default starting state is ACCEPTING
+  - Each state has different entry/exit functions that will be displayed in terminal. These statements do not actually represent anything happening in the code, they are simply there to abstractly represent what might actually be happening in a real manufacturing line. For example, when you enter the MANUFACTURING state, the terminal will display "Lines are running." And when you exit from the MANUFACTURING state, the terminal will display "Lines are not running."
   - Certain states will only respond to certain keys. The machine will not change state if a key is entered out of order. The possible keys to be entered for each state are as follows:
     - ACCEPTING => O
     - PROCESSING => V,I
