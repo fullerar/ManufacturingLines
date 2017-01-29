@@ -1,6 +1,6 @@
 # ManufacturingLines
-# JMU Fall '15
-# Laura VanDyke, Andrew Fuller
+JMU Fall '15
+Laura VanDyke, Andrew Fuller
 
 Some things to note: 
   - These programs were made on/for a Linux based machine. Some functions used are deprecated on Mac OS and will cause warnings/errors if you try to compile them.
